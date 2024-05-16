@@ -14,8 +14,9 @@ public class DbConn {
 
         try {
             conn = DriverManager.getConnection(url, username, password);
-            System.out.println("Success connecting to database");
+            System.out.println("Berhasil Terhubung ke Database!");
         } catch(Exception e) {
+            System.out.println("Gagal terhubung ke Database! Berikut adalah pesan errornya : \n");
             e.printStackTrace();
         }
         
